@@ -1,0 +1,126 @@
+/* reset */
+body, h2, p, ul, button {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: initial;
+}
+
+.ir {
+  overflow: hidden;
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+/* Layout */
+body {
+  background-color: #ddd;
+}
+
+.bg-wrap {
+  min-height: 470px;
+  background-image: url(./images/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+.header-wrap {
+  color: orange;
+  border: 20px solid;
+  border-bottom: none;
+  max-width: 980px;
+  min-height: 470px;
+  margin: 80px auto 0;
+  padding: 50px 350px 50px 50px;
+  box-sizing: border-box;
+  background-image: url(./images/container-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 10% bottom;
+}
+
+.items-wrap {  
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 30px 0;
+
+}
+
+.list-cover-wrap {
+  padding-top: 76.5%;
+  position: relative;
+  border-bottom: 5px solid orange;
+}
+
+/* design */
+
+/* header */
+.header-title {
+  letter-spacing: 0.2em;
+  font-size: 2rem;
+  border-bottom: 8px solid;
+  display: inline-block;
+  word-break: keep-all;
+  margin-bottom: 50px;
+}
+
+/* letter-spacing 단위를 어떤걸 써야할지 모르겠습니다. 
+em 단위를 쓰면 소수점으로 떨어진다고 하셔서
+root 폰드를 조절하고 써야 할 까요?
+그렇게 되면 전체적인 폰트 사이즈가 바뀌니 
+협업 할때도 쓰는 일반적인 방법인지 궁금합니다. */
+
+.header-sub {
+  line-height: 1.5;
+}
+
+/* oak-items */
+.oak-items {
+  max-width: 300px;
+  color: orange;
+  font-weight: bold;
+}
+
+.oak-items-list {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.oak-items-list .list-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.oak-items-list .list-sub {
+  padding: 20px;
+  line-height: 1;
+  position: relative;
+}
+
+.oak-items-list .list-button {
+  background-image: url(./images/play.png);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 4px;
+  right: 0;
+  cursor: pointer;
+}
